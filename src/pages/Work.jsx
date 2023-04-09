@@ -274,7 +274,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                   ></path>
                 </svg>
               </div>
-              <Link className="btn btn-square btn-ghost" to="https://habitify-vijay.netlify.app/app/settings">
+              <Link className="btn btn-square btn-ghost" to="/app/settings">
                   <img src={data?.photo} className="w-full h-full rounded-2xl" alt="User Profile Picture" referrerPolicy="no-referrer"/>
               </Link>
             </div>
@@ -301,7 +301,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                       </svg>
                       <span>{variables ? variables?.count : 0}</span>
                     </p>
-                    <Link className="btn btn-square btn-ghost btn-sm ml-auto" to="https://habitify-vijay.netlify.app/app/edit-sport">
+                    <Link className="btn btn-square btn-ghost btn-sm ml-auto" to="/app/edit-sport">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
