@@ -274,9 +274,9 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                   ></path>
                 </svg>
               </div>
-              <a className="btn btn-square btn-ghost" href="/app/settings">
+              <Link className="btn btn-square btn-ghost" to="/app/settings">
                   <img src={data?.photo} className="w-full h-full rounded-2xl" alt="User Profile Picture" referrerPolicy="no-referrer"/>
-              </a>
+              </Link>
             </div>
             <div className="p-4 bg-neutral-100/10 rounded-3xl flex flex-col gap-4">
               <div className="flex gap-4">
@@ -301,7 +301,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                       </svg>
                       <span>{variables ? variables?.count : 0}</span>
                     </p>
-                    <a className="btn btn-square btn-ghost btn-sm ml-auto" href="/app/edit-sport">
+                    <Link className="btn btn-square btn-ghost btn-sm ml-auto" to="/app/edit-sport">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
@@ -314,7 +314,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                             clipRule="evenodd"
                           ></path>
                         </svg>
-                    </a>
+                    </Link>
                   </div>
                   <div className="font-semibold mb-4 ">{data?.username}</div>
                   <div className="relative h-5">
