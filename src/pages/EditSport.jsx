@@ -22,30 +22,30 @@ const EditSport = () => {
   const [data, setData] = useState(null)
 
 // this part receives the user data
-//   useEffect(()=>{
-//     setValue(localStorage.getItem("userUID"));
-//     const getData = async ()=>{
-//       const docRef = doc(db, "users", value);
-//       const docSnap = await getDoc(docRef);
+  useEffect(()=>{
+    setValue(localStorage.getItem("userUID"));
+    const getData = async ()=>{
+      const docRef = doc(db, "users", value);
+      const docSnap = await getDoc(docRef);
 
-//       if (docSnap.exists()) {
-//         // console.log("Document data:", docSnap.data());
-//         setLoading(false);
-//         setData(docSnap.data());
-//       } else {
-//         // doc.data() will be undefined in this case
-//         console.log("No such document!");
-//       }
-//     }
+      if (docSnap.exists()) {
+        // console.log("Document data:", docSnap.data());
+        setLoading(false);
+        setData(docSnap.data());
+      } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+      }
+    }
     
-//     const timeoutId = setTimeout(() => {
-//       getData();
-//     }, 50); // add a delay of 1 second (1000 milliseconds)
+    const timeoutId = setTimeout(() => {
+      getData();
+    }, 50); // add a delay of 1 second (1000 milliseconds)
     
-//     return () => {
-//       clearTimeout(timeoutId);
-//     }
-//   },[value]);
+    return () => {
+      clearTimeout(timeoutId);
+    }
+  },[value]);
 
   
 // this is for username input
@@ -86,7 +86,7 @@ const handleClickIcon = (e, key) => {
         }
       });
     setInterval(()=>{
-//         navigate('/app');
+        navigate('/app');
     },500)
   };
 
@@ -100,7 +100,7 @@ const handleClickIcon = (e, key) => {
     await deleteDoc(doc(db, "users", value));
     localStorage.clear();
     setInterval(()=>{
-//         navigate('/signup');
+        navigate('/signup');
     },500)
 }
 
@@ -109,7 +109,7 @@ const handleClickIcon = (e, key) => {
       {loading? <Loader/> : <main className="overflow-y-auto text-base-100 bg-neutral">
         <div className="max-w-xl mx-auto p-4 space-y-8 mb-24">
           <div>
-            <Link className="btn btn-ghost" >
+            <Link className="btn btn-ghost" to="/app">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
