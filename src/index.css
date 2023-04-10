@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -29,7 +29,7 @@ a:hover {
 }
 
 body {
-  font-family: 'Delicious Handrawn';
+  font-family: 'Delicious Handrawn', cursive;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
