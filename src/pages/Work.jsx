@@ -302,7 +302,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                       </svg>
                       <span>{variables ? variables?.count : 0}</span>
                     </p>
-                    <Link className="btn btn-square btn-ghost btn-sm ml-auto" onclick={() => navigate("/edit-sport")}>
+                    <button className="btn btn-square btn-ghost btn-sm ml-auto" onclick={() => navigate("/edit-sport")}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
@@ -315,7 +315,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                             clipRule="evenodd"
                           ></path>
                         </svg>
-                    </Link>
+                    </button>
                   </div>
                   <div className="font-semibold mb-4 ">{data?.username}</div>
                   <div className="relative h-5">
