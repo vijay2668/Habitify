@@ -236,7 +236,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
   }
   
   useEffect(()=>{
-    window.location.reload();
+    window.location.reload(true);
   },[])
 
 
