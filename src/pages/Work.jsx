@@ -235,6 +235,9 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
     return greeting;
   }
   
+  useEffect(()=>{
+    window.location.reload();
+  },[])
 
 
   return (
