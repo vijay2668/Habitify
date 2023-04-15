@@ -9,7 +9,7 @@ import switchCaseFunctionFor4x from '../SwitchCaseFunctions/switchCaseFunctionFo
 import switchCaseFunctionFor5x from '../SwitchCaseFunctions/switchCaseFunctionFor5x';
 import switchCaseFunctionFor6x from '../SwitchCaseFunctions/switchCaseFunctionFor6x';
 import switchCaseFunctionFor7x from '../SwitchCaseFunctions/switchCaseFunctionFor7x';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const navigate = useNavigate();
 
 const medal = ["🥇", "🥈", "🥉", 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40];
