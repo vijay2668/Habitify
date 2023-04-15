@@ -9,7 +9,8 @@ import switchCaseFunctionFor4x from '../SwitchCaseFunctions/switchCaseFunctionFo
 import switchCaseFunctionFor5x from '../SwitchCaseFunctions/switchCaseFunctionFor5x';
 import switchCaseFunctionFor6x from '../SwitchCaseFunctions/switchCaseFunctionFor6x';
 import switchCaseFunctionFor7x from '../SwitchCaseFunctions/switchCaseFunctionFor7x';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+const navigate = useNavigate();
 
 const medal = ["🥇", "🥈", "🥉", 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40];
 const Work = () => {
@@ -274,9 +275,9 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                   ></path>
                 </svg>
               </div>
-              <Link className="btn btn-square btn-ghost" to="/settings">
-                  <img src={data?.photo} className="w-full h-full rounded-2xl" alt="User Profile Picture" referrerPolicy="no-referrer"/>
-              </Link>
+//               <Link className="btn btn-square btn-ghost"  >
+                  <img onclick={() => navigate("/settings")} src={data?.photo} className="w-full h-full rounded-2xl" alt="User Profile Picture" referrerPolicy="no-referrer"/>
+//               </Link>
             </div>
             <div className="p-4 bg-neutral-100/10 rounded-3xl flex flex-col gap-4">
               <div className="flex gap-4">
@@ -301,7 +302,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                       </svg>
                       <span>{variables ? variables?.count : 0}</span>
                     </p>
-                    <Link className="btn btn-square btn-ghost btn-sm ml-auto" to="/edit-sport">
+                    <Link className="btn btn-square btn-ghost btn-sm ml-auto" onclick={() => navigate("/edit-sport")}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
