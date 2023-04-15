@@ -68,7 +68,7 @@ const handleClickIcon = (e, key) => {
   };
 
 // this is for editing the account of user
-// const navigate = useNavigate();
+const navigate = useNavigate();
 
   const editData = async () => {
     await updateDoc(doc(db, "users", value), {
