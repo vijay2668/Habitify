@@ -272,7 +272,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                   ></path>
                 </svg>
               </div>
-              <Link className="btn btn-square btn-ghost" to="/settings"  >
+              <Link className="btn btn-square btn-ghost" target="/app/settings" to="/app/settings"  >
                   <img src={data?.photo} className="w-full h-full rounded-2xl" alt="User Profile Picture" referrerPolicy="no-referrer"/>
               </Link>
             </div>
@@ -299,7 +299,7 @@ if(data!==null && btnDisableDate!==undefined && lastClickTime!==undefined && var
                       </svg>
                       <span>{variables ? variables?.count : 0}</span>
                     </p>
-                    <Link className="btn btn-square btn-ghost btn-sm ml-auto" to='/edit-sport'>
+                    <Link className="btn btn-square btn-ghost btn-sm ml-auto" target="/app/edit-sport" to='/app/edit-sport'>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 20 20"
